@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #e5eff5;
+    font-size: 16px;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    width: 800px;
+    
+}
+
+.header {
+    background-color: white;
+    padding: 3em;
+    border-radius: 1em 1em 0 0;
+
+}
+
+.header h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1em;
+}
+
+.header h2 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 0.5em;
+}
+
+.header p {
+    line-height: 25px;
+    color: grey;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    padding: 3em;
+    width: 50%;
+    border-radius: 0 0 0 1em;
+}
+
+.subscription h1 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.subscription h2 {
+    color: white;
+    font-size: 2em;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+span {
+   color:  hsl(179, 82%, 71%);
+   padding-left: 1em;
+}
+
+.subscription p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 400;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 1em;
+    padding: 0.8em;
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(71, 55%, 56%);
+}
+
+.us {
+    background-color: hsl(179, 51%, 62%);
+    padding: 3em;
+    width: 50%;
+    border-radius: 0 0 1em 0;
+}
+
+.us h1 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.us p {
+    color: rgb(240, 240, 240);
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
