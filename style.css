@@ -13,134 +13,132 @@ body {
     min-height: 100vh; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
-.container {
-    width: 800px;
-    
+main {
+    padding: 2em;
 }
 
-.header {
-    background-color: white;
+article {
     padding: 3em;
-    border-radius: 1em 1em 0 0;
-
 }
 
-.header h1 {
+.first {
+    background-color: white;
+}
+
+.first h1 {
     color: hsl(179, 62%, 43%);
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    font-size: 1.6em;
 }
 
-.header h2 {
+.first h2 {
     color: hsl(71, 73%, 54%);
-    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
 }
 
-.header p {
-    line-height: 25px;
-    color: grey;
-}
+.first p {
+    color:  hsl(218, 22%, 67%);
+    font-size: 1em;
+    line-height: 1.8em;
+    margin-bottom: 1em;
 
-.flex {
-    display: flex;
-    width: 100%;
 }
 
 .subscription {
+    
+}
+
+.second {
     background-color: hsl(179, 62%, 43%);
-    padding: 3em;
-    width: 50%;
-    border-radius: 0 0 0 1em;
 }
 
-.subscription h1 {
+.second h1, h2, p, button {
     color: white;
-    font-size: 1.5em;
+}
+
+.second h1 {
     margin-bottom: 1em;
-}
-
-.subscription h2 {
-    color: white;
-    font-size: 2em;
 }
 
 .price {
     display: flex;
     align-items: center;
-    margin-bottom: 1em;
+    gap: 1em;
+    margin-bottom: .8em;
 }
 
-span {
-   color:  hsl(179, 82%, 71%);
-   padding-left: 1em;
+.price h2 {
+    font-size: 2em;
 }
 
-.subscription p {
-    color: white;
-    font-size: 1.2em;
+.price span {
+    color: rgb(230, 230, 230);
+    font-weight: 400;
+}
+
+.second p {
     margin-bottom: 2em;
 }
 
 button {
     background-color: hsl(71, 73%, 54%);
-    color: white;
-    font-weight: 400;
-    font-size: 1.2em;
     border: none;
-    border-radius: 1em;
-    padding: 0.8em;
+    border-radius: .5em;
+    padding: 1em 5em;
     width: 100%;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: hsl(71, 55%, 56%);
-}
-
-.us {
-    background-color: hsl(179, 51%, 62%);
-    padding: 3em;
-    width: 50%;
-    border-radius: 0 0 1em 0;
-}
-
-.us h1 {
-    color: white;
-    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 1em;
     margin-bottom: 1em;
 }
 
-.us p {
-    color: rgb(240, 240, 240);
-    line-height: 30px;
+.third {
+    background-color: hsl(179, 60%, 52%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
+.third h1, p {
+    color: white;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.third h1 {
+    margin-bottom: 1em;
 }
 
+.third p {
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 650px) {
+    body {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    main {
+        border-radius: 2em;
+    }
+    
+    .subscription{
+        display: flex;
+    }
+
+    .second, .third {
+        width: 50%;
+    }
+
+    .second button {
+        padding: 1em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
